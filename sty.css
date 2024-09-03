@@ -1,0 +1,643 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    
+}
+
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    position: relative;
+}
+
+.dropdown {
+    position: relative;
+}
+/*
+.dropdown-btn::after {
+    content: '\25BE';
+    margin-left: 5px;
+}*/
+
+.dropdown-menu {
+   display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: white;
+    color: black;
+    width: 200px; 
+}
+.dropdown-menu1{
+    
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+}
+
+.dropdown-menu ul li {
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown .dropdown-menu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu ul li a:hover {
+    color: #60ab93;
+}
+
+/*.nav-links{
+    position: relative;
+    list-style: none;
+    padding: 50px;
+}
+.nav_left { 
+    float: left;  
+    
+    margin-left: 10px;
+}
+.nav-links .jo li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav_right{
+    float: right; 
+    margin-right: 20px;
+    /*list-style: none;
+}
+.nav-links, .nav_right li{
+    display: inline;
+    margin-right: 20px;
+}*/
+
+
+
+
+.hel{
+    
+    background-color: #4b84ee;
+    margin: 40px;
+    border-radius: 20px;
+}
+.hel1{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+}
+.hel1 div{
+    flex: 1;
+}
+.hel1_1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.botomm{
+    margin-left: 40px;
+}
+.hel1_1 h1{
+    font-size: 60px;
+    color: #333;
+    margin-bottom: 10px; 
+}
+.hel1_1 div{
+    flex: 1;
+}
+.hel_1{
+    
+    padding: 40px;
+}
+
+/*.container {
+    display: flex;
+    height: 75vh;
+    margin: 20px 20px;
+  }
+  .left {
+    background-color: lightblue;
+    overflow-y: auto;
+    flex: 1;
+  }
+  .right {
+    background-color: lightgreen;
+    flex: 1;
+  }
+.scroll{
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+.scroll div {
+  background-color: #f1f1f1;
+  margin: 20px;
+  flex: 1;
+} */
+.colomn0{
+    background-color: #4f6df5;
+    height: 75vh;
+    margin: 60px;
+    position: relative;
+    border-radius: 20px;
+}
+.smallcolomn{
+    margin: 40px;
+}
+.volumn{
+    
+    position: relative;
+    padding: 80px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.volumn1_1{
+    background-color: #4b84ee;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+    margin-top:40px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.volumn_1_1 h1{
+    margin-left: 40px;
+}
+.volumn_1_1,.ppp{
+    margin-left: 40px;
+}
+
+
+
+
+
+
+.container1{
+    background-color: #007bff;
+    margin: 20px;
+    padding: 20px;
+}
+.colomn{
+    padding: 40px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    max-width: 1200px;
+    text-align: left;
+    margin: auto;
+}
+.colomn1_1{
+    display: flex;
+    flex-direction: row;
+}
+.colomn1_1_right{
+    flex: 1;
+    overflow-y: auto;
+    height: 150vh;
+}
+.colomn1_1_right h3{
+    margin-top: 40px;
+}
+.colomn1_1_right-1{
+    display: flex;
+    overflow-y: auto;
+    height: 200vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.colomn1_1_right-1 div{
+    flex: 1;
+}
+.colomn1_1_2{
+    flex: 1;
+}
+.colomn1_1_right-1-small1{
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    background-color: #007bff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.colomn1_1_right-1-small1 div{
+    flex: 1;
+    width: auto;
+}
+.colomn1_1_right-1-small1-1{
+    background-color: #60ab93;
+    width: auto;
+    text-align: center;
+}
+
+
+
+
+
+.container2{
+    background-color: blue;  
+    margin: 40px;
+    position: relative;
+    border-radius: 20px;
+    padding: 80px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.colomn1{
+    padding: 40px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    max-width: 1200px;
+    text-align: left;
+    margin: auto;
+}
+.inside0{
+    display: flex;
+    flex-direction: column;
+}
+.div10{   
+    flex:1;
+}
+.div10 div{
+    flex: 1;
+}
+.div9{
+    display: flex;
+    flex-direction: row;
+}
+.div9_1 a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+}
+.div2{
+    display: flex;
+    flex: 1;
+    margin-top: 40px;
+    gap: 20px;
+}
+.div2 p{
+    margin-top: 10px;
+
+}
+.div2 div{
+    flex: 1;
+}
+
+
+
+
+.container3 {
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+    margin-top:40px ;
+}
+/*h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2b2b2b;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.card .icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+*/
+.card-grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card1 {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.container3 h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: box-shadow 0.5s;
+    text-align: left;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.card:hover {
+    /* background-color: red; */
+    box-shadow: 5px 5px 10px 8px rgba(0, 0, 0, 0.1);
+    /* scale: 1.05; */
+}
+.icon {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card a {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card a:hover {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Icons (for demo purposes, replace with actual icons as needed) */
+.ach-icon {
+    background-color: #4f6df5;
+}
+
+.wire-icon {
+    background-color: #8564db;
+}
+
+.book-transfers-icon {
+    background-color: #4b84ee;
+}
+
+.ledger-icon {
+    background-color: #e4e4e4;
+}
+
+.bank-accounts-icon {
+    background-color: #60ab93;
+}
+
+.card-programs-icon {
+    background-color: #607D8B;
+}
+
+/* Icon common styles */
+.icon {
+    display: inline-block;
+    border-radius: 5px;
+}
+
+
+
+
+.container4{
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+    margin-top:40px ;
+}
+.column{
+    display: flex;
+    flex-direction: row;
+}
+.column1{
+    flex: 2;
+}
+.column2{
+    flex: 1;
+}
+.small-column1 p{
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.small-column1 a {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+}
+.small-column1{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+.Too-small-column a{
+    margin: 10px;
+}
+
+
+
+/*.{
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+    margin-top:40px ;
+}*/
+.column3{
+    margin: 40px;
+    background-color: #4b84ee;
+    position: relative;
+    border-radius: 20px;
+    
+}
+
+.column3-small-column2{
+    padding: 40px;
+}
+
+.small-column2{
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+    margin-top:40px ;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.Too-small-column1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Too-small-column1 h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.Too-small-column2{
+    flex: 1;
+}
+
+.btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #f0f1f7;
+    color: #2b2b2b;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e0e1e7;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+
+
+
+
+.Footer_FooterWrapper{
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+    margin-top:60px ;
+    margin-bottom: 60px;
+}
+.Column_Footer_FooterWrapper{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    list-style: none;
+}
+.Small_Column1_Footer_FooterWrapper{
+    flex: 1;
+    list-style: none;
+}
+.Too_Small_Column1_Footer_FooterWrapper{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+.Too_Small_Column1_Footer_FooterWrapper div{
+    flex: 1;
+}
+.Small_Column2_Footer_FooterWrapper{
+    flex: 1;
+}
+.Too_Small_Column2_Footer_FooterWrapper{
+    padding: 10px;
+    gap: 20px;
+}
+.Small_Column3_Footer_FooterWrapper{
+    flex: 1;
+}
+.Too_Small_Column3_Footer_FooterWrapper{
+    padding: 10px;
+}
+.bar li{
+    list-style: none;
+    padding: 10px;
+}
+.bar a{
+    text-decoration: none;
+    color: black;
+}
+.Footer_FooterWrapper1{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+}
+.bar2 li{
+    list-style: none;
+    display: inline;
+    margin: 10px;
+    overflow: hidden;
+}
+.container_Footer_FooterWrapper1{
+    display: flex;
+    justify-content: space-between;
+}
+.left2{
+    text-align: left;
+}
+.right2{
+    text-align: right;
+}
+.container_Footer_FooterWrapper{
+    display: inline;
+}
+.Container1_Footer_FooterWrapper{
+    padding: 5px;
+    border-top: 2px #ddd;
+}
